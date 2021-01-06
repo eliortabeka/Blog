@@ -1,0 +1,19 @@
+h5 {
+  font-size: 19px;
+}
+
+button {
+  border: 0;
+  font-size: 17px;
+  background: #cecece;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px -5px rgba(0,0,0, .4);
+  transition: box-shadow 600ms;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 7px 25px -2px rgba(0,0,0, .4);
+  }
+}

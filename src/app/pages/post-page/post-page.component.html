@@ -1,0 +1,13 @@
+<button routerLink="/">Back</button>
+
+<ng-container *ngIf="post; else noPost">
+  <h1>{{ post.title}}</h1>
+  <img [src]="post.image" [alt]="post.title">
+  <p [innerText]="post.body"></p>
+</ng-container>
+
+<ng-template #noPost>
+  <div class="loading">
+  </div>
+</ng-template>
+

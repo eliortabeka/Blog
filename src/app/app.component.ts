@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'blog';
+
+  constructor() {
+    if(localStorage.getItem('agree')) {
+      this.userAgree = true;
+    }
+  }
+
+  userAgree = false;
+
+  agreeTerms() {
+    localStorage.setItem('agree', 'true');
+    this.userAgree = true;
+  }
+
 }
